@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'event/show'
+
+  get 'event/new'
+
+  get 'event/create'
+
+  get 'event/edit'
+
+  get 'event/updates'
+
+  get 'event/addupdates'
+
   get 'register/new'
 
   post '/register/create' => 'register#create'
