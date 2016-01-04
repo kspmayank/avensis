@@ -17,6 +17,24 @@ Rails.application.routes.draw do
 
   get 'welcome/index'
 
+  get '/technical' => 'welcome#technical'
+
+  get '/funncreative' => 'welcome#funncreative'
+
+  get '/quiz' => 'welcome#quiz'
+
+  get '/robotics' => 'welcome#robotics'
+
+  get '/literary' => 'welcome#literary'
+
+  get '/photography' => 'welcome#photography'
+
+  get '/design' => 'welcome#design'
+
+  get '/creativity' => 'welcome#creativity'
+
+
+
 
 
 

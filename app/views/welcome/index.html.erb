@@ -1,6 +1,927 @@
-<h1> Hello World</h1>
-<p>
-  <% @registered.each do |r| %>
-     <%= r.name %>
-  <% end %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Avensis 2k16</title>
+    <meta name="description" content="Spirit8 is a Digital agency one page template built based on bootstrap framework. This template is design by Robert Berki and coded by Jenn Pereira. It is simple, mobile responsive, perfect for portfolio and agency websites. Get this for free exclusively at ThemeForces.com">
+    <meta name="keywords" content="bootstrap theme, portfolio template, digital agency, onepage, mobile responsive, spirit8, free website, free theme, themeforces themes, themeforces wordpress themes, themeforces bootstrap theme">
+    <meta name="author" content="ThemeForces.com">
+    
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/logo.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/logo.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/logo.png">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+    <!-- Slider
+    ================================================== -->
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+    <!-- Stylesheet
+    ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Navigation
+    ==========================================-->
+    <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Avensis 2016</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#tf-home" class="page-scroll">Home</a></li>
+            <li><a href="#tf-about" class="page-scroll">About</a></li>
+            <li><a href="#tf-team" class="page-scroll">Team</a></li>
+            <li><a href="#tf-services" class="page-scroll">Departments</a></li>
+            <!--<li><a href="#tf-works" class="page-scroll">Events</a></li>-->
+            <li><a href="#tf-testimonials" class="page-scroll">Messages</a></li>
+            <li><a href="#tf-contact" class="page-scroll">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- Home Page
+    ==========================================-->
+    <div id="tf-home" class="text-center">
+        <div class="overlay">
+            <div class="content">
+                <h1>Welcome to<strong><span class="color"> Avensis 2K16</span></strong></h1>
+                <!-- <p class="lead">Logo <strong>for</strong> Avensis <strong>2k16 ?</strong></p> -->
+                <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Page
+    ==========================================-->
+    <div id="tf-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/logo.png" height="330" width="450" class="img-responsive">
+                </div>
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <div class="section-title">
+                            <!--<h4>About us</h4>-->
+                            <h1><strong>About us</strong></h1>
+                            <hr>
+                            <div class="clearfix"></div>
+                        </div>
+                        <p class="intro" style="font-size:1.5em; font-family:Monotype Corsiva;">Avensis, an unmatchable artefact of Maharaja Surajmal Institute of Technology is a blend of ingenuity, genius and creativity.<br><br>
+Healthiest competition occurs when average people win by putting above average effort.This spirit of healthy competition is what AVENSIS seeks to fill its participants with. And what other way than two fun filled exciting days with a variety of events that test the students in a diversity of backgrounds .The two day extravaganza is a panorama of high octane energy and zeal. We endeavour to deliver surpassing emanation every epoch.
 </p>
+                        <!--<ul class="about-list">
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>Mission</strong> - <em>We deliver uniqueness and quality</em>
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>Skills</strong> - <em>Delivering fast and excellent results</em>
+                            </li>
+                            <li>
+                                <span class="fa fa-dot-circle-o"></span>
+                                <strong>Clients</strong> - <em>Satisfied clients thanks to our experience</em>
+                            </li>
+                        </ul>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Page
+    ==========================================-->
+   <div id="tf-team" class="text-center" style="overflow-x:hidden; ">
+        <div class="overlay">
+            <div class="container">
+                <div class="section-title center">
+                    <h2>Meet <strong>our team</strong></h2>
+                    <div class="line">
+                        <hr>
+                    </div>
+                </div>
+
+                <div id="team" class="owl-carousel owl-theme row">
+				
+				<!-- <div class="item">
+                        <div class="thumbnail">
+                            <img src="img/logo.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>AVENSIS 2K16</h3>
+                                <p>CA's and CO's</p>
+                            </div>
+                        </div>
+                    </div> -->
+				
+                    <div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/mayank_bajaj.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Mayank Bajaj</h3>
+                                <p>CA</p>
+                                <p>If you can't be young and foolish, you can never be old and wise!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/pragati.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Pragati Sharma</h3>
+                                <p>CA</p>
+                                <p>Dwell on the beauty of life. Watch the stars, and see yourself running with them.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/utkarsh.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Utkarsh Malhotra</h3>
+                                <p>CA</p>
+                                <p>Strategy will compensate the talent. The talent will never compensate the strategy.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/mayank_kashyap.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3><a href="http://mayankkashyap.com" style="color: #fff;">Mayank Kashyap</a></h3>
+                                <p>CO - Technical Department</p>
+                                <p>A goal without a plan is just a wish.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/Sagar.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Sagar Jangam</h3>
+                                <p>CO - Technical Department</p>
+                                <p>When things go tougher, try harder.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/abhimanyu.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Abhimanyu Dalal</h3>
+                                <p>CO - FNC Department</p>
+                                <p>I didn't choose the fest life, the fest life chose me.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/aarushi.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Aarushi Sharma</h3>
+                                <p>CO - FNC Department</p>
+                                <p>Avensis<br>Defying convention. Stirring innovation.</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/Deepanshu.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Deepanshu Rathee</h3>
+                                <p>CO - FNC Department</p>
+                                <p>Imagination is its own form of courage.</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/ankit.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Ankit Attri</h3>
+                                <p>CO - Design Department</p>
+                                <p>The things you own end up owning you.</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/hemant.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Hemant Chauhan</h3>
+                                <p>CO - Creativity Department</p>
+                                <p>Don’t count the days, make days count!</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/Pranav.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Pranav Sahai</h3>
+                                <p>CO - Creativity Department</p>
+                                <p>Artist by birth, still to discover more...</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/navya.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>K.V Navya</h3>
+                                <p>CO - Internal Department</p>
+                                <p>Inspiration is for amateurs, the rest us just show up and get to work.</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/Shipra.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Shipra</h3>
+                                <p>CO - Internal Department</p>
+                                <p>If you can dream it, you can do it.</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/kunal.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Kunal Dhir</h3>
+                                <p>CO - Literary Department</p>
+                                <p>Some birds aren't meant to be caged. Their feathers are just too bright.</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/Arun.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Arun Yadav</h3>
+                                <p>CO - Quizzes Department</p>
+                                <p>Reunite Pangea - Uniting the world with the power of knowledge</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/ankur.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Ankur Sharma</h3>
+                                <p>CO - Quizzes Department</p>
+                                <p>Reunite Pangea - Uniting the world with the power of knowledge</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/Navneet.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Navneet Jha</h3>
+                                <p>CO - Robotics Department</p>
+                                <p>AVENSIS- All technocrats,strive not only for success but for values.</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/Vishal .jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Vishal Kakkar</h3>
+                                <p>CO - Robotics Department</p>
+                                <p>AVENSIS- Place where students thrive for success.</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/Rahul.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Rahul Kumar Pushkar</h3>
+                                <p>CO - Robotics Department</p>
+                                <p>Let the game of Advancing begin.</p>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/Jatin.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Jatin Wadhwa</h3>
+                                <p>CO - Robotics Department</p>
+                                <p>Avensis-The battlefield of all advancers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="thumbnail">
+                            <img src="img/team/Sunny.jpg" alt="..." class="img-circle team-img">
+                            <div class="caption">
+                                <h3>Sunny</h3>
+                                <p>CO - Robotics Department</p>
+                                <p>Break out the ordinary</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <style> 
+    #team{
+            
+            -webkit-animation-name: example; /* Chrome, Safari, Opera */
+            -webkit-animation-duration: 40s; /* Chrome, Safari, Opera */
+            -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+            animation-timing-function: linear;
+            animation-name: examle;
+            animation-duration: 40s;
+            animation-iteration-count: infinite;
+        }
+
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes examle {
+            0%   {left: 100%;}
+            100% {left: -500%;}
+        }
+
+        /* Standard syntax */
+        @keyframes examle {
+            0%   {left: 100%;}
+            100% {left: -500%;}
+        }
+
+        @media screen and (max-width: 768px) {
+            #team{
+
+                -webkit-animation-name: examle; /* Chrome, Safari, Opera */
+                -webkit-animation-duration: 50s; /* Chrome, Safari, Opera */
+                -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+                animation-timing-function: linear;
+                animation-name: examle;
+                animation-duration: 50s;
+                animation-iteration-count: infinite;
+            }
+
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes examle {
+                0%   {left: 100%;}
+                100% {left: -2200%;}
+            }
+
+            /* Standard syntax */
+            @keyframes examle {
+                0%   {left: 100%;}
+                100% {left: -2200%;}
+            }
+        }
+
+    </style>
+
+    <!-- Services Section
+    ==========================================-->
+    <div id="tf-services" class="text-center">
+        <div class="container">
+            <div class="section-title center">
+                <h2><strong>Departments</strong></h2>
+                <div class="line">
+                    <hr>
+                </div>
+                <!--<div class="clearfix"></div>
+                <<small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>
+            </div>-->
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 service">
+                    <i class="fa fa-desktop"><!--<a href="../../departments/technical/technical.html"/>--></i>
+                    <h4><strong><a href="/technical">Technical</a></strong></h4>
+                    <p>Genius means little more than the knack of perceiving in an in-habitual way.</p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 service">
+                    <i class="fa fa-image"></i>
+                    <h4><strong><a href="/design">Design</a></strong></h4>
+                    <p>Design is a way of life and prodigious fusion of talent, creative ability and technical knowledge. </p>
+                </div>
+				
+				 <div class="col-md-3 col-sm-6 service">
+                    <i class="fa fa-fire"></i>
+                    <h4><strong><a href="/funncreative">Fun & Creative</a></strong></h4>
+                    <p>It is and has always been about experimenting,breaking rules,making mistakes and having fun.</p>
+                </div>
+				
+				 <div class="col-md-3 col-sm-6 service">
+                    <i class="fa fa-gear"></i>
+                    <h4><strong><a href="/robotics">Robotics</a></strong></h4>
+                    <p>It’s all about seeing something that doesn’t exist already. You need to explore how you can bring it into being.</p>
+                </div>
+				
+				 <div class="col-md-3 col-sm-6 service">
+                    <i class="fa fa-pencil"></i>
+                    <h4><strong>Creative</strong></h4>
+                    <p>The world is but a canvas to the imagination.</p>
+                </div>
+				
+				 <div class="col-md-3 col-sm-6 service">
+                    <i class="fa fa-file"></i>
+                    <h4><strong>Literary</strong></h4>
+                    <p> It's like looking at the mirror of one's innermost feelings and thoughts</p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 service">
+                    <i class="fa fa-list"></i>
+                    <h4><strong><a href="/quiz">Quizzes</a></strong></h4>
+                    <p>You can’t wait for inspiration you have to go after it with a club.</p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 service">
+                    <i class="fa fa-camera"></i>
+                    <h4><strong>Photography</strong></h4>
+                    <p>Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Clients Section
+    ==========================================-->
+    <div id="tf-clients" class="text-center" style="overflow-x:hidden; ">
+        <div class="overlay">
+            <div class="container">
+
+                <div class="section-title center">
+                    <h2>Some of <strong>our Sponsors</strong></h2>
+                    <div class="line">
+                        <hr>
+                    </div>
+                </div>
+                <div id="clients" class="owl-carousel owl-theme">
+                    <!-- <div class="item">
+                        <img src="img/client/1572_logo.png" height="143" width="200">
+                    </div> -->
+                    <div class="item">
+                        <img src="img/client/aaaaa-150x73.png" height="143" width="200">
+                    </div>
+                    <div class="item">
+                        <img src="img/client/abtec.png" height="143" width="200">
+                    </div>
+                    <div class="item">
+                        <img src="img/client/boilogo-150x86.png" height="143" width="150">
+                    </div>
+                    <div class="item">
+                        <img src="img/client/ebay.png" height="143" width="200">
+                    </div>
+                   <div class="item">
+                        <img src="img/client/logo-150x143.png" height="143" width="150">
+                    </div>
+                    <div class="item">
+                        <img src="img/client/ClickOnCare.png" height="143" width="200">
+                    </div>
+					 <div class="item">
+                        <img src="img/client/IMG-20150305-WA0108-150x150.png" height="143" width="150">
+                    </div>
+					
+                    <div class="item">
+                        <img src="img/client/logo-JCB-india-1.png" height="143" width="150">
+                    </div>
+                    <div class="item">
+                        <img src="img/client/ONGC.png" height="143" width="150">
+                    </div>
+                    <div class="item" style="width: 250px;">
+                        <img src="img/client/PNB.png" height="143" width="200">
+                    </div>
+                    <div class="item">
+                        <img src="img/client/cleartrip.png" height="143" width="200">
+                    </div>
+                    <div class="item">
+                        <img src="img/client/sanmacs.png" height="143" width="150">
+                    </div>
+                    <div class="item">
+                        <img src="img/client/alldaycoupon.png" height="143" width="150">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <style> 
+    #clients{
+            
+            -webkit-animation-name: example; /* Chrome, Safari, Opera */
+            -webkit-animation-duration: 25s; /* Chrome, Safari, Opera */
+            -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+            animation-timing-function: linear;
+            animation-name: example;
+            animation-duration: 25s;
+            animation-iteration-count: infinite;
+        }
+
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes example {
+            0%   {left: 100%;}
+            100% {left: -300%;}
+        }
+
+        /* Standard syntax */
+        @keyframes example {
+            0%   {left: 100%;}
+            100% {left: -300%;}
+        }
+
+        @media screen and (max-width: 768px) {
+            #clients{
+
+                -webkit-animation-name: example; /* Chrome, Safari, Opera */
+                -webkit-animation-duration: 25s; /* Chrome, Safari, Opera */
+                -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+                animation-timing-function: linear;
+                animation-name: example;
+                animation-duration: 25s;
+                animation-iteration-count: infinite;
+            }
+
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes example {
+                0%   {left: 100%;}
+                100% {left: -1500%;}
+            }
+
+            /* Standard syntax */
+            @keyframes example {
+                0%   {left: 100%;}
+                100% {left: -1500%;}
+            }
+        }
+
+    </style>
+
+
+        <!-- Portfolio Section
+    ==========================================-->
+    <div id="tf-works">
+        <!--<div class="container"> <!- Container -->
+            <!--<div class="section-title text-center center">
+                <h2>A Glance at the <strong>Events</strong></h2>
+                <div class="line">
+                    <hr>
+                </div>
+                <!-<div class="clearfix"></div>
+                <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>
+            </div>-->
+            <!--<div class="space"></div>
+
+            <div class="categories">
+                
+                <ul class="cat">
+                    <li class="pull-left"><h4>Filter by Type:</h4></li>
+                    <li class="pull-right">
+                        <ol class="type">
+                            <!-<li><a href="#" data-filter="*" class="active">All</a></li>-->
+                            <!--<li><a href="#" data-filter=".web">Technical</a></li>
+                            <li><a href="#" data-filter=".photography">Design</a></li>
+                            <li><a href="#" data-filter=".app" >Fun and Creative</a></li>
+                            <li><a href="#" data-filter=".branding" >Robotics</a></li>
+							<li><a href="#" data-filter=".web">Creative</a></li>
+                            <li><a href="#" data-filter=".photography">Literary</a></li>
+                            <li><a href="#" data-filter=".app" >Quizes</a></li>
+                            <li><a href="#" data-filter=".branding" >Photography</a></li>
+                        </ol>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+
+            <div id="lightbox" class="row">
+
+                <div class="col-sm-6 col-md-3 col-lg-3 branding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h4>Logo Design</h4>
+                                    <small>Branding</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/event.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 photography app">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h4>Logo Design</h4>
+                                    <small>Branding</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/event.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 branding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h4>Logo Design</h4>
+                                    <small>Branding</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/event.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 branding">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h4>Logo Design</h4>
+                                    <small>Branding</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/event.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 web">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h4>Logo Design</h4>
+                                    <small>Branding</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/event.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 app">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h4>Logo Design</h4>
+                                    <small>Branding</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/event.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 photography web">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h4>Logo Design</h4>
+                                    <small>Branding</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/event.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3 web">
+                    <div class="portfolio-item">
+                        <div class="hover-bg">
+                            <a href="#">
+                                <div class="hover-text">
+                                    <h4>Logo Design</h4>
+                                    <small>Branding</small>
+                                    <div class="clearfix"></div>
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                                <img src="img/portfolio/event.jpg" class="img-responsive" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>-->
+
+
+    <!-- Testimonials Section
+    ==========================================-->
+    <div id="tf-testimonials" class="text-center" style="background-color:#FFFFFF; color:#5a5a5a" >
+        <div class="overlay" style="background-color:#FFFFFF; color:#5a5a5a">
+            <div class="container" style="background-color:#FFFFFF; color:#5a5a5a">
+                <div class="section-title center" style="background-color:#FFFFFF; color:#5a5a5a">
+                    <h2><strong>Messages</strong></h2>
+                    <div class="line">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div id="testimonal" class="">
+                        <img src="img/team/poonam.jpg" alt="..." class="img-circle team-img">
+                            <div class="item" style="margin-bottom:10em;">
+                                <h5>I am delighted to announce the commencement of AVENSIS 2016.Due to the ingenuity and vivacity of our students this fest has attained a marked grandeur with time so much so that it now seems to embody the pride of our institution.</h5>
+                                <p><strong><font color="#5a5a5a">Dr. Poonam Bansal</font></strong><font color="#5a5a5a"><br>Director <br>Maharaja Surajmal Institute of Technology</font></p>
+                            </div>
+                        <img src="img/team/naveen.jpg" alt="..." class="img-circle team-img">
+                            <div class="item">
+                                <h5>The time yet arrives again like it does each year, to celebrate our fervor for reaching the pinnacle of Science and Technology and showcasing our passion through this 2 day grand festivity.Through the vigorous efforts of our dynamic students, we bring you a bigger and better AVENSIS this year.</h5>
+                                <p><strong><font color="#5a5a5a">Mr. Naveen Dahiya</font></strong><font color="#5a5a5a"><br>Convener<br>Avensis 2016</font></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style> 
+    #testimonia{
+            
+            -webkit-animation-name: example; /* Chrome, Safari, Opera */
+            -webkit-animation-duration: 25s; /* Chrome, Safari, Opera */
+            -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+            animation-timing-function: linear;
+            animation-name: exmple;
+            animation-duration: 25s;
+            animation-iteration-count: infinite;
+        }
+
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes exmple {
+            0%   {left: 0;}
+            50%  {left: 0;}
+            51%  {left: -100%}
+            99%  {left: -100%;}
+            100% {left: 0;}
+        }
+
+        /* Standard syntax */
+        @keyframes exmple {
+            0%   {left: 0;}
+            100% {left: -300%;}
+        }
+    </style>
+
+    <!-- Contact Section
+    ==========================================-->
+    <div id="tf-contact" class="text-center" style="color: #fff;">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+
+                    <div class="section-title center">
+                        <h2>Feel free to <strong>contact us</strong></h2>
+                        <div class="line">
+                            <hr>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <form action="http://formspree.io/avensis2k16@gmail.com.com" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleInputName">Name</label>
+                                    <input type="text" class="form-control" id="exampleInputName" placeholder="Enter Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Message</label>
+                            <textarea class="form-control" rows="3" placeholder="Enter Message"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn tf-btn btn-default">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <nav id="footer">
+        <div class="container">
+            <div class="pull-left fnav">
+                <p>Avensis 2016 © Website maintained by Team Avensis.</p>
+            </div>
+            <div class="pull-right fnav">
+                <ul class="footer-social">
+                    <li><a href="https://www.facebook.com/msitannualfest"><i class="fa fa-facebook"></i></a></li>
+                    <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+                    <li><a href="https://instagram.com/msitannualfest"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/msitannualfest"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+
+    <script src="js/owl.carousel.js"></script>
+
+    <!-- Javascripts
+    ================================================== -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>
