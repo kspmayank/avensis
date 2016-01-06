@@ -64,7 +64,9 @@ Rails.application.routes.draw do
 
 
 
-  get '/DoodleDesigning' => 'event#DoodleDesigning'
+
+
+  get '/Google_Doodle' => 'event#Google_Doodle'
 
 
 
@@ -78,11 +80,17 @@ Rails.application.routes.draw do
 
   get '/Galisports' => 'event#Galisports'
 
-  get '/VigyaFun' => 'event#VigyaFun'
+  #get '/VigyaFun' => 'event#VigyaFun'
 
   get '/Ecomaniac' => 'event#Ecomaniac'
 
   get '/LaserTrap' => 'event#LaserTrap'
+
+
+
+
+  get '/Movielicious' => 'event#Movielicious'
+
 
 
 

@@ -55,10 +55,13 @@ class EventController < ApplicationController
     @data = Update.all   
   end
 
+ 
+
+
 # Designing department
 
-  def DoodleDesigning
-    @data = Update.all    
+   def Google_Doodle
+    @data = Update.all
   end
 
 # FUN AND CREATIVE department
@@ -67,11 +70,11 @@ class EventController < ApplicationController
     @data = Update.all     
   end
 
-  def TreasureHunt
+  def Enigma
     @data = Update.all     
   end
 
-  def FoodGram
+  def Eat_Or_Quit
     @data = Update.all      
   end
 
@@ -83,17 +86,22 @@ class EventController < ApplicationController
     @data = Update.all    
   end
 
-  def VigyaFun
-    @data = Update.all     
-  end
+  # def VigyaFun
+  #   @data = Update.all     
+  # end
 
-  def Ecomaniac
+  def Ecomaze
     @data = Update.all     
   end
 
   def LaserTrap
     @data = Update.all     
   end
+
+  def Movielicious
+    @data = Update.all 
+  end
+
 
 # ROBOTICS department
 
