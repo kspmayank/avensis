@@ -115,7 +115,7 @@ Rails.application.routes.draw do
 
   get '/delhiquiz' => 'event#DelhiQuiz'
 
-
+  get '/getcollege' => 'register#getcollege'
 
 
 
