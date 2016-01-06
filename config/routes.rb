@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'log_out' => 'sessions#destroy', :as => 'log_out'
+  get 'log_in' => 'sessions#new', :as => 'log_in'
+  get 'sign_up' => 'users#new', :as => 'sign_up'
+  resources :users
+  resources :sessions
+
   get 'event/show'
 
   get 'event/new'
@@ -56,11 +62,11 @@ Rails.application.routes.draw do
 
   get '/AndroidGaming' => 'event#AndroidGaming'
 
-  
+
 
   get '/DoodleDesigning' => 'event#DoodleDesigning'
 
-  
+
 
   get '/UltimateChallenge' => 'event#UltimateChallenge'
 
@@ -78,7 +84,7 @@ Rails.application.routes.draw do
 
   get '/LaserTrap' => 'event#LaserTrap'
 
-  
+
 
 
   get '/Robowar' => 'event#Robowar'
@@ -93,7 +99,7 @@ Rails.application.routes.draw do
 
   get '/Junkyard' => 'event#Junkyard'
 
- 
+
 
   get '/GeneralQuiz' => 'event#GeneralQuiz'
 

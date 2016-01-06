@@ -26,7 +26,7 @@ gem 'tzinfo-data'
 gem 'tzinfo'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'bcrypt-ruby', '~> 3.1', '>= 3.1.5'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
