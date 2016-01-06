@@ -38,76 +38,76 @@ Rails.application.routes.draw do
 
 
 
-  get '/Anonymous' => 'event#Anonymous'
+  get '/anonymous' => 'event#Anonymous'
 
-  get '/Hackathon' => 'event#Hackathon'
+  get '/hackathon' => 'event#Hackathon'
 
-  get '/EncodedBeans' => 'event#EncodedBeans'
+  get '/encodedbeans' => 'event#EncodedBeans'
 
-  get '/CodeTillYouDie' => 'event#CodeTillYouDie'
+  get '/onlinecoding' => 'event#CodeTillYouDie'
 
-  get '/AlgoJam' => 'event#AlgoJam'
+  get '/algojam' => 'event#AlgoJam'
 
-  get '/Brainstorm' => 'event#Brainstorm'
+  get '/brainstorm' => 'event#Brainstorm'
 
-  get '/Techvilla' => 'event#Techvilla'
+  get '/techvilla' => 'event#Techvilla'
 
-  get '/LANGaming' => 'event#LANGaming'
+  get '/gaming' => 'event#LANGaming'
 
-  get '/AndroidGaming' => 'event#AndroidGaming'
-
-  
+  get '/androidgaming' => 'event#AndroidGaming'
 
   
 
-  get '/Google_Doodle' => 'event#Google_Doodle'
+  
+
+  get '/designing' => 'event#Google_Doodle'
 
   
 
-  get '/UltimateChallenge' => 'event#UltimateChallenge'
+  get '/uc' => 'event#UltimateChallenge'
 
-  get '/TreasureHunt' => 'event#TreasureHunt'
+  get '/treasurehunt' => 'event#TreasureHunt'
 
-  get '/FoodGram' => 'event#FoodGram'
+  get '/foodgram' => 'event#FoodGram'
 
-  get '/Karaoke' => 'event#Karaoke'
+  get '/karaoke' => 'event#Karaoke'
 
-  get '/Galisports' => 'event#Galisports'
+  get '/galisports' => 'event#Galisports'
 
   # get '/VigyaFun' => 'event#VigyaFun'
 
-  get '/Ecomaniac' => 'event#Ecomaniac'
+  get '/ecomaniac' => 'event#Ecomaniac'
 
-  get '/LaserTrap' => 'event#LaserTrap'
+  get '/lasertrap' => 'event#LaserTrap'
 
-  get '/Movielicious' => 'event#Movielicious'
+  get '/movielicious' => 'event#Movielicious'
 
   
 
 
-  get '/Robowar' => 'event#Robowar'
+  get '/robowar' => 'event#Robowar'
 
-  get '/RoboRugby' => 'event#RoboRugby'
+  get '/roborugby' => 'event#RoboRugby'
 
-  get '/Carnage' => 'event#Carnage'
+  get '/carnage' => 'event#Carnage'
 
-  get '/LFR' => 'event#LFR'
+  get '/lfr' => 'event#LFR'
 
-  get '/RoboMaze' => 'event#RoboMaze'
+  get '/robomaze' => 'event#RoboMaze'
 
-  get '/Junkyard' => 'event#Junkyard'
+  get '/junkyard' => 'event#Junkyard'
 
  
 
-  get '/GeneralQuiz' => 'event#GeneralQuiz'
+  get '/generalquiz' => 'event#GeneralQuiz'
 
-  get '/IndiaQuiz' => 'event#IndiaQuiz'
+  get '/indiaquiz' => 'event#IndiaQuiz'
 
-  get '/BizTechQuiz' => 'event#BizTechQuiz'
+  get '/biztechquiz' => 'event#BizTechQuiz'
 
-  get '/EntertainmentQuiz' => 'event#EntertainmentQuiz'
+  get '/entertainmentquiz' => 'event#EntertainmentQuiz'
 
-  get '/DelhiQuiz' => 'event#DelhiQuiz'
+  get '/delhiquiz' => 'event#DelhiQuiz'
 
 
 
