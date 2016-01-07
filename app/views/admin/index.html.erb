@@ -1,0 +1,42 @@
+<h1>Admin Page</h1>
+<div id="user_nav">
+  <%if current_user  %>
+      Logged in as <%= current_user.username %>
+      <%= link_to "Log out", log_out_path %>
+      <br><br><br><br>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>College</th>
+          <th>Branch</th>
+          <th>Year</th>
+          <th>Gender</th>
+          <th>Email</th>
+          <th>Mobile</th>
+        </tr>
+        <% @obj.each do |obj| %>
+          <tr>
+             <td><%= obj.name %></td>
+             <td><%= obj.college %></td>
+             <td><%= obj.branch %></td>
+             <td><%= obj.year %></td>
+             <td><%= obj.gender %></td>
+             <td><%= obj.email %></td>
+             <td><%= obj.mobile %></td>
+          </tr>
+        <% end %>
+      </table>
+      <%= form_for :upd, url:"/addupdate" do |f| %>
+        <p>
+          <%= f.label :content %><br>
+          <%= f.text_area :content %>
+        </p>
+        <p>
+          <%= f.submit "Submit" %>
+        </p>
+      <% end %>
+  <% else %>
+   <%= link_to "Sign up", sign_up_path %> or
+   <%= link_to "Log In", log_in_path %>
+  <% end %>
+</div>

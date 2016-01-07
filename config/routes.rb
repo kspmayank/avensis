@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'admin/index'
+  get 'adminpage' =>  'admin#index', :as => 'admin_page'
   get 'log_out' => 'sessions#destroy', :as => 'log_out'
   get 'log_in' => 'sessions#new', :as => 'log_in'
   get 'sign_up' => 'users#new', :as => 'sign_up'
@@ -8,6 +10,7 @@ Rails.application.routes.draw do
   get 'event/show'
 
   get 'event/new'
+  post '/addupdate' => 'admin#update'
 
   get 'event/create'
 
@@ -62,13 +65,13 @@ Rails.application.routes.draw do
 
   get '/androidgaming' => 'event#AndroidGaming'
 
-  
 
-  
+
+
 
   get '/designing' => 'event#Google_Doodle'
 
-  
+
 
   get '/uc' => 'event#UltimateChallenge'
 
@@ -88,7 +91,7 @@ Rails.application.routes.draw do
 
   get '/movielicious' => 'event#Movielicious'
 
-  
+
 
 
   get '/robowar' => 'event#Robowar'
@@ -103,7 +106,7 @@ Rails.application.routes.draw do
 
   get '/junkyard' => 'event#Junkyard'
 
- 
+
 
   get '/generalquiz' => 'event#GeneralQuiz'
 
