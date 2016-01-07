@@ -1,42 +1,366 @@
-<h1>Registration for Avensis 2k15</h1>
-<%= form_for :register, url:"/register/create" do |f| %>
-  <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :college %><br>
-    <%= f.text_field :college %>
-  </p>
-  <p>
-    <%= f.label :branch %><br>
-    <%= f.text_field :branch %>
-  </p>
-  <p>
-    <%= f.label :year %><br>
-    <%= f.text_field :year %>
-  </p>
+<!DOCTYPE html>
+<html>
 
-  <p>
-    <%= f.label :gender %><br>
-    <%= f.text_field :gender %>
-  </p>
-  <p>
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </p>
-  <p>
-    <%= f.label :mobile %><br>
-    <%= f.text_field :mobile %>
-  </p>
-  <p>
-    <% Event.all.each do |e| %>
-        <%= check_box_tag "event[id][]",e.id %>
-        <%= e.name %> <br>
-    <% end %>
-  </p>
+<head>
 
-  <p>
-    <%= f.submit "Submit" %>
-  </p>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Form With Labels On Top</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+    
+<body>
+
+<style type="text/css">
+  html{
+    background-color: #f3f3f3;
+}
+
+.form-labels-on-top{
+    box-sizing: border-box;
+    max-width: 475px;
+    margin: 0 auto;
+    padding: 55px;
+
+    background-color:  #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+    font: bold 14px sans-serif;
+    text-align: center;
+}
+
+.form-labels-on-top .form-row{
+    text-align: left;
+    max-width: 315px;
+    margin: 25px auto 0;
+}
+
+.form-labels-on-top .form-title-row{
+    margin: 0 auto 40px;
+}
+
+.form-labels-on-top h1{
+    display: inline-block;
+    box-sizing: border-box;
+    color: #4C565E;
+    font-size: 24px;
+    padding: 0 0 12px 0;
+    margin: 0;
+    border-bottom: 2px solid #6CAEE0;
+}
+
+.form-labels-on-top .form-row > label span{
+    display: block;
+    box-sizing: border-box;
+    color:  #5f5f5f;
+    width: 200px;
+    padding: 0 0 12px;
+}
+
+.form-labels-on-top input{
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    width: 300px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 18px;
+    border: 1px solid #dbdbdb;
+}
+
+.form-labels-on-top input[type=radio],
+.form-labels-on-top input[type=checkbox]{
+    box-shadow: none;
+    width: auto;
+}
+
+.form-labels-on-top select{
+    background-color: #ffffff;
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 18px;
+    border: 1px solid #dbdbdb;
+}
+
+.form-labels-on-top .form-radio-buttons > div{
+    margin-bottom: 10px;
+}
+
+.form-labels-on-top .form-radio-buttons label span{
+    margin-left: 8px;
+    color:  #5f5f5f;
+    font-weight: normal;
+}
+
+.form-labels-on-top .form-radio-buttons input{
+    width: auto;
+}
+
+.form-labels-on-top button{
+    border-radius: 2px;
+    background-color:  #6caee0;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 22px;
+    border: 0;
+    margin-top: 15px;
+}
+
+.form-labels-on-top .form-checkbox-buttons > div{
+    margin-bottom: 10px;
+}
+
+.form-labels-on-top .form-checkbox-buttons label span{
+    margin-left: 8px;
+    color:  #5f5f5f;
+    font-weight: normal;
+}
+
+.form-labels-on-top .form-checkbox-buttons input{
+    width: auto;
+}
+
+/*  Making the form responsive. Remove this media query
+    if you don't need the form to work on mobile devices. */
+
+@media (max-width: 600px) {
+
+    .form-labels-on-top{
+        padding: 30px;
+    }
+
+    .form-labels-on-top input{
+        width: 240px;
+    }
+
+}
+
+</style>
+
+    <div class="main-content">
+
+      
+    <%= form_for :register, url:"/register/create", :html => {:class => 'form-labels-on-top'} do |f| %>
+
+
+            <div class="form-title-row">
+                <h1>Registration Form</h1>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Full name</span>
+                    <%= f.text_field :name %>
+                </label>
+            </div>
+            
+            <div class="form-row">
+                <label>
+                    <span>College</span>
+                    <input list="colleges" name="College" style="margin: 10px;" placeholder="Enter College">
+                    <!-- <datalist id="Citys"> -->
+                    <datalist id="colleges">
+                    </datalist>
+                    <!-- </datalist> -->
+                </label>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        $("#colleges").load("/getcollege #college");
+                    });
+                </script>
+            </div>
+            
+             <div class="form-row">
+                <label><span>Branch</span></label>
+                <div class="form-radio-buttons">
+
+                    <div>
+                        <label>
+                          <%= f.radio_button :branch, 'cse' %>
+                            <span>CSE</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                          <%= f.radio_button :branch, 'ece' %>
+                            <span>ECE</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                          <%= f.radio_button :branch, 'it' %>
+                            <span>IT</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                          <%= f.radio_button :branch, 'other' %>
+                            <span>Other</span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <label>
+                    <span>Year</span>
+                    <%=f.select "year", "<option>1</option><option>2</option><option>3</option><option>4</option>".html_safe%>
+                </label>
+            </div>
+          
+            <div class="form-row">
+                <label><span>Gender</span></label>
+                <div class="form-radio-buttons">
+
+                    <div>
+                        <label>
+                          <%= f.radio_button :gender, 'male' %>
+                            <span>Male</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                          <%= f.radio_button :gender, 'female' %>
+                            <span>Female</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                          <%= f.radio_button :gender, 'other' %>
+                            <span>Other</span>
+                        </label>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <label>
+                    <span>Email</span>
+                    <%= f.text_field :email %>
+                </label>
+            </div>
+            
+            <div class="form-row">
+                <label>
+                    <span>Mobile Number</span>
+                    <%= f.text_field :mobile %>
+                </label>
+            </div>
+            
+            <div class="form-row" style="max-width: 720px;">
+              <label><span>Events</span></label>
+              <div class="form-checkbox-buttons">
+
+               <ul class="nav nav-tabs" id="myTab">
+                <li class="active"><a href="#technical">Technical</a></li>
+                <li><a href="#robotics">Robotics</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+                <li><a href="#fnc">Fun n Creativity</a></li>
+                <li><a href="#designing">Designing</a></li>
+              </ul>
+
+              <div id='content' class="tab-content">
+                <div class="tab-pane active" id="technical">
+                  <div>
+                   <br>   
+                             <% Event.where(category_id: 1).all.each do |e| %>
+                         <label>
+                                <%= check_box_tag "event[id][]",e.id %>
+                                <%= e.name.capitalize %> <br>
+                         </label><br>
+                            <% end %>
+                          </div>
+                        </div>
+                        <div class="tab-pane" id="robotics">
+                          <div>
+                         <br>
+<!--                          <span>ROBOTICS</span>
+ -->                            <% Event.where(category_id: 4).all.each do |e| %>
+                         <label>
+                                <%= check_box_tag "event[id][]",e.id %>
+                                <%= e.name.capitalize %> <br>
+                         </label>
+                         <br>
+                            <% end %>
+                         </div>
+                        </div>
+                        <div class="tab-pane" id="quizzes">
+                          <div>
+                         <br>
+<!--                          <span>QUIZZES</span>
+ -->                        <% Event.where(category_id: 3).all.each do |e| %>
+                         <label>
+                            <%= check_box_tag "event[id][]",e.id %>
+                            <%= e.name.capitalize %> <br>
+                         </label><br>
+                        <% end %>
+                        </div>
+                        </div>
+                        <div class="tab-pane" id="fnc">
+                          <div>
+                         <br>
+<!--                          <span>FUN AND CREATIVE</span>
+ -->                         
+                            <% Event.where(category_id: 2).all.each do |e| %>
+                         <label>
+                                <%= check_box_tag "event[id][]",e.id %>
+                                <%= e.name.capitalize %> <br>
+                         </label><br>
+                            <% end %>
+                         </div>
+                        </div>
+                        <div class="tab-pane" id="designing">
+                          <div>
+                         <br>
+                         <!-- <span>DESIGNING</span> -->
+                         
+                            <% Event.where(category_id: 5).all.each do |e| %>
+                         <label>
+                                <%= check_box_tag "event[id][]",e.id %>
+                                <%= e.name.capitalize %> <br>
+                         </label><br>
+                         <%end%>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+   $('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>    
+<!-- </div> --> <!-- container -->
+
+
+<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>            
+          
+            
+            <div class="form-row">
+                <%= f.submit "Submit" %>
+            </div>
+
+
+
 <% end %>
+
+    </div>
+    
+</body>
+
+</html>
