@@ -1,3 +1,4 @@
+<%= tinymce_assets %>
 <h1>Admin Page</h1>
 <div id="user_nav">
   <%if current_user  %>
@@ -29,7 +30,7 @@
       <%= form_for :upd, url:"/addupdate" do |f| %>
         <p>
           <%= f.label :content %><br>
-          <%= f.text_area :content %>
+          <%= f.text_area :content, class: "tinymce" %>
         </p>
         <p>
           <%= f.submit "Submit" %>
@@ -40,3 +41,4 @@
    <%= link_to "Log In", log_in_path %>
   <% end %>
 </div>
+<%= tinymce %>
