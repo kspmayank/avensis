@@ -11,145 +11,190 @@ class EventController < ApplicationController
   def edit
   end
 
-  def updates
+  def update
   end
 
-  def addupdates
+  def addUpds
   end
 
 # Technical department
 
   def Anonymous 
-    @data = Update.all
+    @data = Upd.all
   end
 
   def Hackathon  
-    @data = Update.all
+    @data = Upd.all
   end
 
   def EncodedBeans
-    @data = Update.all
+    @data = Upd.all
   end
 
   def CodeTillYouDie
-    @data = Update.all  
+    @data = Upd.all  
   end
 
   def AlgoJam 
-    @data = Update.all 
+    @data = Upd.all 
   end
 
   def Brainstorm
-    @data = Update.all  
+    @data = Upd.all  
   end
 
   def Techvilla
-    @data = Update.all   
+    @data = Upd.all   
   end
 
   def LANGaming
-    @data = Update.all   
+    @data = Upd.all   
   end
 
   def AndroidGaming
-    @data = Update.all   
+    @data = Upd.all   
   end
 
+
+  def Call_of_Duty
+    @data = Upd.all 
+  end
+
+  def Counter_Strike
+    @data = Upd.all 
+  end
+
+  def Dota2
+    @data = Upd.all 
+  end
+
+  def FIFA
+    @data = Upd.all 
+  end
+
+  def NFS
+    @data = Upd.all 
+  end
+
+  def Online_Coding
+    @data = Upd.all 
+  end
  
 
 
 # Designing department
 
    def Google_Doodle
-    @data = Update.all
+    @data = Upd.all
   end
 
 # FUN AND CREATIVE department
 
   def UltimateChallenge
-    @data = Update.all     
+    @data = Upd.all     
   end
 
   def Enigma
-    @data = Update.all     
+    @data = Upd.all     
   end
 
   def Eat_Or_Quit
-    @data = Update.all      
+    @data = Upd.all      
   end
 
   def Karaoke
-    @data = Update.all      
+    @data = Upd.all      
   end
 
   def Galisports
-    @data = Update.all    
+    @data = Upd.all    
   end
 
   # def VigyaFun
-  #   @data = Update.all     
+  #   @data = Upd.all     
   # end
 
   def Ecomaze
-    @data = Update.all     
+    @data = Upd.all     
   end
 
   def LaserTrap
-    @data = Update.all     
+    @data = Upd.all     
   end
 
   def Movielicious
-    @data = Update.all 
+    @data = Upd.all 
   end
 
 
 # ROBOTICS department
 
   def Robowar
-    @data = Update.all      
+    @data = Upd.all      
   end
 
   def RoboRugby
-    @data = Update.all      
+    @data = Upd.all      
   end
 
   def Carnage
-    @data = Update.all       
+    @data = Upd.all       
   end
 
   def LFR
-    @data = Update.all       
+    @data = Upd.all       
   end
 
   def RoboMaze
-    @data = Update.all       
+    @data = Upd.all       
   end
 
   def Junkyard
-    @data = Update.all      
+    @data = Upd.all      
   end
 
 # QUIZZES department
 
   def GeneralQuiz
-    @data = Update.all      
+    @data = Upd.all      
   end
 
   def IndiaQuiz
-    @data = Update.all      
+    @data = Upd.all      
   end
 
   def BizTechQuiz
-    @data = Update.all      
+    @data = Upd.all      
   end
 
   def EntertainmentQuiz
-    @data = Update.all      
+    @data = Upd.all      
   end
 
   def DelhiQuiz
-    @data = Update.all      
+    @data = Upd.all      
   end
+
+
+
+
+
+
+  def Journalism
+  end
+
+  def Live_Roast
+  end
+
+  def Parliamentary_Debate
+  end
+
+  def Poetry_Competition
+  end
+
+  def Spell_Bee
+  end
+
 
  
 

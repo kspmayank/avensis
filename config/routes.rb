@@ -1,15 +1,17 @@
 Rails.application.routes.draw do
-  get 'admin/index'
-  get 'adminpage' =>  'admin#index', :as => 'admin_page'
-  get 'log_out' => 'sessions#destroy', :as => 'log_out'
-  get 'log_in' => 'sessions#new', :as => 'log_in'
-  get 'sign_up' => 'users#new', :as => 'sign_up'
-  resources :users
-  resources :sessions
+   get 'admin/index'
+   get 'adminpage' =>  'admin#index', :as => 'admin_page'
+   get 'log_out' => 'sessions#destroy', :as => 'log_out'
+   get 'log_in' => 'sessions#new', :as => 'log_in'
+   get 'sign_up' => 'users#new', :as => 'sign_up'
+   resources :users
+   resources :sessions
+ 
 
   get 'event/show'
 
   get 'event/new'
+
   post '/addupdate' => 'admin#update'
 
   get 'event/create'
@@ -24,6 +26,7 @@ Rails.application.routes.draw do
 
   post '/register/create' => 'register#create'
 
+  post 'welcome/contact' => 'welcome#contact'
   get 'welcome/index'
 
   get '/technical' => 'welcome#technical'
@@ -53,7 +56,7 @@ Rails.application.routes.draw do
 
   get '/encodedbeans' => 'event#EncodedBeans'
 
-  get '/onlinecoding' => 'event#CodeTillYouDie'
+  get '/codetillyoudie' => 'event#CodeTillYouDie'
 
   get '/algojam' => 'event#AlgoJam'
 
@@ -61,23 +64,42 @@ Rails.application.routes.draw do
 
   get '/techvilla' => 'event#Techvilla'
 
-  get '/gaming' => 'event#LANGaming'
+  get '/langaming' => 'event#LANGaming'
 
   get '/androidgaming' => 'event#AndroidGaming'
 
 
 
+  get '/cod' => 'event#Call_of_Duty'
 
+  get '/cs' => 'event#Counter_Strike'
+
+  get '/dota2' => 'event#Dota2'
+
+  get '/fifa' => 'event#FIFA'
+
+  get '/nfs' => 'event#NFS'
+
+  get '/onlinecoding' => 'event#Online_Coding'
+
+  
+
+
+
+
+  
+
+  
 
   get '/designing' => 'event#Google_Doodle'
 
-
+  
 
   get '/uc' => 'event#UltimateChallenge'
 
-  get '/treasurehunt' => 'event#TreasureHunt'
+  get '/enigma' => 'event#Enigma'
 
-  get '/foodgram' => 'event#FoodGram'
+  get '/eoq' => 'event#FoodGram'
 
   get '/karaoke' => 'event#Karaoke'
 
@@ -85,13 +107,13 @@ Rails.application.routes.draw do
 
   # get '/VigyaFun' => 'event#VigyaFun'
 
-  get '/ecomaniac' => 'event#Ecomaniac'
+  get '/ecomaze' => 'event#Ecomaze'
 
   get '/lasertrap' => 'event#LaserTrap'
 
   get '/movielicious' => 'event#Movielicious'
 
-
+  
 
 
   get '/robowar' => 'event#Robowar'
@@ -106,7 +128,7 @@ Rails.application.routes.draw do
 
   get '/junkyard' => 'event#Junkyard'
 
-
+ 
 
   get '/generalquiz' => 'event#GeneralQuiz'
 
@@ -114,12 +136,30 @@ Rails.application.routes.draw do
 
   get '/biztechquiz' => 'event#BizTechQuiz'
 
-  get '/entertainmentquiz' => 'event#EntertainmentQuiz'
+  get '/entquiz' => 'event#EntertainmentQuiz'
 
   get '/delhiquiz' => 'event#DelhiQuiz'
 
-  get '/getcollege' => 'register#getcollege'
 
+
+
+  get '/journalism' => 'event#Journalism'
+
+  get '/liveroast' => 'event#Live_Roast'
+
+  get '/pdebate' => 'event#Parliamentary_Debate'
+
+  get '/poetry' => 'event#Poetry_Competition'
+
+  get '/spellbee' => 'event#Spell_Bee'
+
+
+
+
+
+
+
+get '/getcollege' => 'register#getcollege'
 
 
 

@@ -1,17 +1,19 @@
 class AdminController < ApplicationController
   def index
     if session[:user_id]
-      @obj = EventRegistered.where(event_id: current_user.event_id).all
+      p @obj = EventRegistered.where(event_id: current_user.event_id).all
+      @arr = []
       @obj.each do |o|
-        Registered.find(registered_id: @obj.registered_id)
+        @arr << Registered.find(o.registered_id)
       end
 
     end
 end
 def update
-  @upd=Upd.create(content: params[:upd][:content], user_id: current_user.user_id, event_id: current_user.event_id)
+  p current_user.id
+  @upd=Upd.create(content: params[:upd][:content], user_id: current_user.id, event_id: current_user.event_id)
   @upd.save
-  redirect_to admin_path, :notice => "Update Added"
+  redirect_to '/admin/index', :notice => "Update Added"
 
 end
 

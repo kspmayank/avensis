@@ -19,4 +19,14 @@ class WelcomeController < ApplicationController
   end
   def creativity
   end
+
+  def contact
+    @contact = Contact.create(contact_params)
+    @contact.save
+    redirect_to root_url, notice => 'Ticket generated'
+  end
+private 
+def contact_params
+params.require(:contact).permit(:name,:email,:message)
+end
 end
