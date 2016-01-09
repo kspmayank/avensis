@@ -1,7 +1,18 @@
 Rails.application.routes.draw do
+   get 'admin/index'
+   get 'adminpage' =>  'admin#index', :as => 'admin_page'
+   get 'log_out' => 'sessions#destroy', :as => 'log_out'
+   get 'log_in' => 'sessions#new', :as => 'log_in'
+   get 'sign_up' => 'users#new', :as => 'sign_up'
+   resources :users
+   resources :sessions
+ 
+
   get 'event/show'
 
   get 'event/new'
+
+  post '/addupdate' => 'admin#update'
 
   get 'event/create'
 
@@ -39,116 +50,116 @@ Rails.application.routes.draw do
 
 
 
-  get '/Anonymous' => 'event#Anonymous'
+  get '/anonymous' => 'event#Anonymous'
 
-  get '/Hackathon' => 'event#Hackathon'
+  get '/hackathon' => 'event#Hackathon'
 
-  get '/EncodedBeans' => 'event#EncodedBeans'
+  get '/encodedbeans' => 'event#EncodedBeans'
 
-  get '/CodeTillYouDie' => 'event#CodeTillYouDie'
+  get '/codetillyoudie' => 'event#CodeTillYouDie'
 
-  get '/AlgoJam' => 'event#AlgoJam'
+  get '/algojam' => 'event#AlgoJam'
 
-  get '/Brainstorm' => 'event#Brainstorm'
+  get '/brainstorm' => 'event#Brainstorm'
 
-  get '/Techvilla' => 'event#Techvilla'
+  get '/techvilla' => 'event#Techvilla'
 
-  get '/LANGaming' => 'event#LANGaming'
+  get '/langaming' => 'event#LANGaming'
 
-  get '/AndroidGaming' => 'event#AndroidGaming'
-
-
-
-  get '/Call_of_Duty' => 'event#Call_of_Duty'
-
-  get '/Counter_Strike' => 'event#Counter_Strike'
-
-  get '/Dota2' => 'event#Dota2'
-
-  get '/FIFA' => 'event#FIFA'
-
-  get '/NFS' => 'event#NFS'
-
-  get '/Online_Coding' => 'event#Online_Coding'
-
-  
+  get '/androidgaming' => 'event#AndroidGaming'
 
 
 
+  get '/cod' => 'event#Call_of_Duty'
+
+  get '/cs' => 'event#Counter_Strike'
+
+  get '/dota2' => 'event#Dota2'
+
+  get '/fifa' => 'event#FIFA'
+
+  get '/nfs' => 'event#NFS'
+
+  get '/onlinecoding' => 'event#Online_Coding'
 
   
 
+
+
+
   
 
-  get '/Google_Doodle' => 'event#Google_Doodle'
+  
+
+  get '/designing' => 'event#Google_Doodle'
 
   
 
-  get '/UltimateChallenge' => 'event#UltimateChallenge'
+  get '/uc' => 'event#UltimateChallenge'
 
-  get '/TreasureHunt' => 'event#TreasureHunt'
+  get '/enigma' => 'event#Enigma'
 
-  get '/FoodGram' => 'event#FoodGram'
+  get '/eoq' => 'event#FoodGram'
 
-  get '/Karaoke' => 'event#Karaoke'
+  get '/karaoke' => 'event#Karaoke'
 
-  get '/Galisports' => 'event#Galisports'
+  get '/galisports' => 'event#Galisports'
 
   # get '/VigyaFun' => 'event#VigyaFun'
 
-  get '/Ecomaniac' => 'event#Ecomaniac'
+  get '/ecomaze' => 'event#Ecomaze'
 
-  get '/LaserTrap' => 'event#LaserTrap'
+  get '/lasertrap' => 'event#LaserTrap'
 
-  get '/Movielicious' => 'event#Movielicious'
+  get '/movielicious' => 'event#Movielicious'
 
   
 
 
-  get '/Robowar' => 'event#Robowar'
+  get '/robowar' => 'event#Robowar'
 
-  get '/RoboRugby' => 'event#RoboRugby'
+  get '/roborugby' => 'event#RoboRugby'
 
-  get '/Carnage' => 'event#Carnage'
+  get '/carnage' => 'event#Carnage'
 
-  get '/LFR' => 'event#LFR'
+  get '/lfr' => 'event#LFR'
 
-  get '/RoboMaze' => 'event#RoboMaze'
+  get '/robomaze' => 'event#RoboMaze'
 
-  get '/Junkyard' => 'event#Junkyard'
+  get '/junkyard' => 'event#Junkyard'
 
  
 
-  get '/GeneralQuiz' => 'event#GeneralQuiz'
+  get '/generalquiz' => 'event#GeneralQuiz'
 
-  get '/IndiaQuiz' => 'event#IndiaQuiz'
+  get '/indiaquiz' => 'event#IndiaQuiz'
 
-  get '/BizTechQuiz' => 'event#BizTechQuiz'
+  get '/biztechquiz' => 'event#BizTechQuiz'
 
-  get '/EntertainmentQuiz' => 'event#EntertainmentQuiz'
+  get '/entquiz' => 'event#EntertainmentQuiz'
 
-  get '/DelhiQuiz' => 'event#DelhiQuiz'
-
-
+  get '/delhiquiz' => 'event#DelhiQuiz'
 
 
-  get '/Journalism' => 'event#Journalism'
-
-  get '/Live_Roast' => 'event#Live_Roast'
-
-  get '/Parliamentary_Debate' => 'event#Parliamentary_Debate'
-
-  get '/Poetry_Competition' => 'event#Poetry_Competition'
-
-  get '/Spell_Bee' => 'event#Spell_Bee'
 
 
+  get '/journalism' => 'event#Journalism'
+
+  get '/liveroast' => 'event#Live_Roast'
+
+  get '/pdebate' => 'event#Parliamentary_Debate'
+
+  get '/poetry' => 'event#Poetry_Competition'
+
+  get '/spellbee' => 'event#Spell_Bee'
 
 
 
 
 
 
+
+get '/getcollege' => 'register#getcollege'
 
 
 

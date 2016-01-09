@@ -1,9 +1,10 @@
 class AdminController < ApplicationController
   def index
     if session[:user_id]
-      @obj = EventRegistered.where(event_id: current_user.event_id).all
+      p @obj = EventRegistered.where(event_id: current_user.event_id).all
+      @arr = []
       @obj.each do |o|
-        Registered.find(registered_id: @obj.registered_id)
+        @arr << Registered.find(o.registered_id)
       end
 
     end

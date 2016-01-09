@@ -15,13 +15,13 @@ Category.create(name: "litreray")
 Category.create(name: "creativity")
 Category.create(name: "photography")
 
-
 technical = ['hackathon','anonymous','encoded beans', 'online coding', 'algojam', 'brainstorm', 'techvilla', 'android gaming']
 lan_gaming = ['fifa', 'nfs', 'cs', 'cod', 'dota2']
 designing = ['designing']
 robotics = ['robowar', 'robo rugby', 'carnage', 'LFR', 'robo maze', 'junkyard']
 quizzes = ['general quiz', 'india quiz', 'biztech quiz', 'entertainment quiz', 'delhi quiz']
 fnc = ['ultimate challenge', 'treasure hunt', 'food gram', 'karaoke', 'gali sports', 'movielicious', 'Ecomaze', 'laser trap']
+lit = ['journalism', 'live roast', 'parliamentary debate', 'poetry competition', 'spell bee']
 
 for i in 0...technical.length
 	Event.create(name: technical[i], category_id: 1)
@@ -45,6 +45,10 @@ end
 
 for i in 0...fnc.length
 	Event.create(name: fnc[i], category_id: 2)
+end
+
+for i in 0...lit.length
+	Event.create(name: lit[i], category_id: 2)
 end
 
 
