@@ -29,6 +29,7 @@ gem 'tzinfo'
 gem 'bcrypt-ruby', '~> 3.1', '>= 3.1.5'
 # Use Unicorn as the app server
 # gem 'unicorn'
+gem 'tinymce-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
