@@ -15,6 +15,7 @@ Rails.application.routes.draw do
 
   post '/register/create' => 'register#create'
 
+  post 'welcome/contact' => 'welcome#contact'
   get 'welcome/index'
 
   get '/technical' => 'welcome#technical'
