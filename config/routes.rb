@@ -1,16 +1,7 @@
 Rails.application.routes.draw do
-  get 'admin/index'
-  get 'adminpage' =>  'admin#index', :as => 'admin_page'
-  get 'log_out' => 'sessions#destroy', :as => 'log_out'
-  get 'log_in' => 'sessions#new', :as => 'log_in'
-  get 'sign_up' => 'users#new', :as => 'sign_up'
-  resources :users
-  resources :sessions
-
   get 'event/show'
 
   get 'event/new'
-  post '/addupdate' => 'admin#update'
 
   get 'event/create'
 
@@ -47,78 +38,115 @@ Rails.application.routes.draw do
 
 
 
-  get '/anonymous' => 'event#Anonymous'
+  get '/Anonymous' => 'event#Anonymous'
 
-  get '/hackathon' => 'event#Hackathon'
+  get '/Hackathon' => 'event#Hackathon'
 
-  get '/encodedbeans' => 'event#EncodedBeans'
+  get '/EncodedBeans' => 'event#EncodedBeans'
 
-  get '/onlinecoding' => 'event#CodeTillYouDie'
+  get '/CodeTillYouDie' => 'event#CodeTillYouDie'
 
-  get '/algojam' => 'event#AlgoJam'
+  get '/AlgoJam' => 'event#AlgoJam'
 
-  get '/brainstorm' => 'event#Brainstorm'
+  get '/Brainstorm' => 'event#Brainstorm'
 
-  get '/techvilla' => 'event#Techvilla'
+  get '/Techvilla' => 'event#Techvilla'
 
-  get '/gaming' => 'event#LANGaming'
+  get '/LANGaming' => 'event#LANGaming'
 
-  get '/androidgaming' => 'event#AndroidGaming'
-
-
+  get '/AndroidGaming' => 'event#AndroidGaming'
 
 
 
-  get '/designing' => 'event#Google_Doodle'
+  get '/Call_of_Duty' => 'event#Call_of_Duty'
+
+  get '/Counter_Strike' => 'event#Counter_Strike'
+
+  get '/Dota2' => 'event#Dota2'
+
+  get '/FIFA' => 'event#FIFA'
+
+  get '/NFS' => 'event#NFS'
+
+  get '/Online_Coding' => 'event#Online_Coding'
+
+  
 
 
 
-  get '/uc' => 'event#UltimateChallenge'
 
-  get '/treasurehunt' => 'event#TreasureHunt'
+  
 
-  get '/foodgram' => 'event#FoodGram'
+  
 
-  get '/karaoke' => 'event#Karaoke'
+  get '/Google_Doodle' => 'event#Google_Doodle'
 
-  get '/galisports' => 'event#Galisports'
+  
+
+  get '/UltimateChallenge' => 'event#UltimateChallenge'
+
+  get '/TreasureHunt' => 'event#TreasureHunt'
+
+  get '/FoodGram' => 'event#FoodGram'
+
+  get '/Karaoke' => 'event#Karaoke'
+
+  get '/Galisports' => 'event#Galisports'
 
   # get '/VigyaFun' => 'event#VigyaFun'
 
-  get '/ecomaniac' => 'event#Ecomaniac'
+  get '/Ecomaniac' => 'event#Ecomaniac'
 
-  get '/lasertrap' => 'event#LaserTrap'
+  get '/LaserTrap' => 'event#LaserTrap'
 
-  get '/movielicious' => 'event#Movielicious'
+  get '/Movielicious' => 'event#Movielicious'
 
-
-
-
-  get '/robowar' => 'event#Robowar'
-
-  get '/roborugby' => 'event#RoboRugby'
-
-  get '/carnage' => 'event#Carnage'
-
-  get '/lfr' => 'event#LFR'
-
-  get '/robomaze' => 'event#RoboMaze'
-
-  get '/junkyard' => 'event#Junkyard'
+  
 
 
+  get '/Robowar' => 'event#Robowar'
 
-  get '/generalquiz' => 'event#GeneralQuiz'
+  get '/RoboRugby' => 'event#RoboRugby'
 
-  get '/indiaquiz' => 'event#IndiaQuiz'
+  get '/Carnage' => 'event#Carnage'
 
-  get '/biztechquiz' => 'event#BizTechQuiz'
+  get '/LFR' => 'event#LFR'
 
-  get '/entertainmentquiz' => 'event#EntertainmentQuiz'
+  get '/RoboMaze' => 'event#RoboMaze'
 
-  get '/delhiquiz' => 'event#DelhiQuiz'
+  get '/Junkyard' => 'event#Junkyard'
 
-  get '/getcollege' => 'register#getcollege'
+ 
+
+  get '/GeneralQuiz' => 'event#GeneralQuiz'
+
+  get '/IndiaQuiz' => 'event#IndiaQuiz'
+
+  get '/BizTechQuiz' => 'event#BizTechQuiz'
+
+  get '/EntertainmentQuiz' => 'event#EntertainmentQuiz'
+
+  get '/DelhiQuiz' => 'event#DelhiQuiz'
+
+
+
+
+  get '/Journalism' => 'event#Journalism'
+
+  get '/Live_Roast' => 'event#Live_Roast'
+
+  get '/Parliamentary_Debate' => 'event#Parliamentary_Debate'
+
+  get '/Poetry_Competition' => 'event#Poetry_Competition'
+
+  get '/Spell_Bee' => 'event#Spell_Bee'
+
+
+
+
+
+
+
 
 
 

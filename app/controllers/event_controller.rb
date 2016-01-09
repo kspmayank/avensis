@@ -55,6 +55,24 @@ class EventController < ApplicationController
     @data = Update.all   
   end
 
+
+  def Call_of_Duty
+  end
+
+  def Counter_Strike
+  end
+
+  def Dota2
+  end
+
+  def FIFA
+  end
+
+  def NFS
+  end
+
+  def Online_Coding
+  end
  
 
 
@@ -150,6 +168,27 @@ class EventController < ApplicationController
   def DelhiQuiz
     @data = Update.all      
   end
+
+
+
+
+
+
+  def Journalism
+  end
+
+  def Live_Roast
+  end
+
+  def Parliamentary_Debate
+  end
+
+  def Poetry_Competition
+  end
+
+  def Spell_Bee
+  end
+
 
  
 
