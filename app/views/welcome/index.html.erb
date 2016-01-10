@@ -10,7 +10,7 @@
     <meta name="description" content="Spirit8 is a Digital agency one page template built based on bootstrap framework. This template is design by Robert Berki and coded by Jenn Pereira. It is simple, mobile responsive, perfect for portfolio and agency websites. Get this for free exclusively at ThemeForces.com">
     <meta name="keywords" content="bootstrap theme, portfolio template, digital agency, onepage, mobile responsive, spirit8, free website, free theme, themeforces themes, themeforces wordpress themes, themeforces bootstrap theme">
     <meta name="author" content="ThemeForces.com">
-    
+
     <!-- Favicons
     ================================================== -->
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
@@ -45,6 +45,17 @@
     <![endif]-->
   </head>
   <body>
+    <% if notice %>
+    <div id="notice_wrapper">
+      <p class="notice"><%= notice %></p>
+    </div>
+
+    <% elsif alert %>
+    <div id="notice_wrapper">
+        <p class="alert"><%= alert %></p>
+    </div>
+
+    <% end %>
     <!-- Navigation
     ==========================================-->
     <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
@@ -139,7 +150,7 @@ Healthiest competition occurs when average people win by putting above average e
                 </div>
 
                 <div id="team" class="owl-carousel owl-theme row">
-                
+
                 <!-- <div class="item">
                         <div class="thumbnail">
                             <img src="img/logo.jpg" alt="..." class="img-circle team-img">
@@ -149,7 +160,7 @@ Healthiest competition occurs when average people win by putting above average e
                             </div>
                         </div>
                     </div> -->
-                
+
                     <div class="item">
                         <div class="thumbnail">
                             <img src="img/team/mayank_bajaj.jpg" alt="..." class="img-circle team-img">
@@ -226,7 +237,7 @@ Healthiest competition occurs when average people win by putting above average e
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="thumbnail">
                             <img src="img/team/Deepanshu.jpg" alt="..." class="img-circle team-img">
@@ -237,7 +248,7 @@ Healthiest competition occurs when average people win by putting above average e
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="thumbnail">
                             <img src="img/team/ankit.jpg" alt="..." class="img-circle team-img">
@@ -248,7 +259,7 @@ Healthiest competition occurs when average people win by putting above average e
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="thumbnail">
                             <img src="img/team/hemant.jpg" alt="..." class="img-circle team-img">
@@ -259,7 +270,7 @@ Healthiest competition occurs when average people win by putting above average e
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="thumbnail">
                             <img src="img/team/Pranav.jpg" alt="..." class="img-circle team-img">
@@ -270,7 +281,7 @@ Healthiest competition occurs when average people win by putting above average e
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="thumbnail">
                             <img src="img/team/navya.jpg" alt="..." class="img-circle team-img">
@@ -281,7 +292,7 @@ Healthiest competition occurs when average people win by putting above average e
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="thumbnail">
                             <img src="img/team/Shipra.jpg" alt="..." class="img-circle team-img">
@@ -292,7 +303,7 @@ Healthiest competition occurs when average people win by putting above average e
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="thumbnail">
                             <img src="img/team/kunal.jpg" alt="..." class="img-circle team-img">
@@ -303,7 +314,7 @@ Healthiest competition occurs when average people win by putting above average e
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="thumbnail">
                             <img src="img/team/Arun.jpg" alt="..." class="img-circle team-img">
@@ -314,7 +325,7 @@ Healthiest competition occurs when average people win by putting above average e
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="thumbnail">
                             <img src="img/team/ankur.jpg" alt="..." class="img-circle team-img">
@@ -325,7 +336,7 @@ Healthiest competition occurs when average people win by putting above average e
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="thumbnail">
                             <img src="img/team/Navneet.jpg" alt="..." class="img-circle team-img">
@@ -336,7 +347,7 @@ Healthiest competition occurs when average people win by putting above average e
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="thumbnail">
                             <img src="img/team/Vishal .jpg" alt="..." class="img-circle team-img">
@@ -347,7 +358,7 @@ Healthiest competition occurs when average people win by putting above average e
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="thumbnail">
                             <img src="img/team/Rahul.jpg" alt="..." class="img-circle team-img">
@@ -358,7 +369,7 @@ Healthiest competition occurs when average people win by putting above average e
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="thumbnail">
                             <img src="img/team/Jatin.jpg" alt="..." class="img-circle team-img">
@@ -381,14 +392,14 @@ Healthiest competition occurs when average people win by putting above average e
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
 
-    <style> 
+    <style>
     #team{
-            
+
             -webkit-animation-name: example; /* Chrome, Safari, Opera */
             -webkit-animation-duration: 40s; /* Chrome, Safari, Opera */
             -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
@@ -462,25 +473,25 @@ Healthiest competition occurs when average people win by putting above average e
                     <h4><strong><a href="/design">Design</a></strong></h4>
                     <p>Design is a way of life and prodigious fusion of talent, creative ability and technical knowledge. </p>
                 </div>
-                
+
                  <div class="col-md-3 col-sm-6 service">
                     <i class="fa fa-fire"></i>
                     <h4><strong><a href="/funncreative">Fun & Creative</a></strong></h4>
                     <p>It is and has always been about experimenting,breaking rules,making mistakes and having fun.</p>
                 </div>
-                
+
                  <div class="col-md-3 col-sm-6 service">
                     <i class="fa fa-gear"></i>
                     <h4><strong><a href="/robotics">Robotics</a></strong></h4>
                     <p>It’s all about seeing something that doesn’t exist already. You need to explore how you can bring it into being.</p>
                 </div>
-                
+
                  <div class="col-md-3 col-sm-6 service">
                     <i class="fa fa-pencil"></i>
                     <h4><strong>Creative</strong></h4>
                     <p>The world is but a canvas to the imagination.</p>
                 </div>
-                
+
                  <div class="col-md-3 col-sm-6 service">
                     <i class="fa fa-file"></i>
                     <h4><strong><a href="/literary">Literary</a></strong></h4>
@@ -541,7 +552,7 @@ Healthiest competition occurs when average people win by putting above average e
                      <div class="item">
                         <img src="img/client/IMG-20150305-WA0108-150x150.png" height="143" width="150">
                     </div>
-                    
+
                     <div class="item">
                         <img src="img/client/logo-JCB-india-1.png" height="143" width="150">
                     </div>
@@ -566,9 +577,9 @@ Healthiest competition occurs when average people win by putting above average e
         </div>
     </div>
 
-    <style> 
+    <style>
     #clients{
-            
+
             -webkit-animation-name: example; /* Chrome, Safari, Opera */
             -webkit-animation-duration: 25s; /* Chrome, Safari, Opera */
             -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
@@ -633,7 +644,7 @@ Healthiest competition occurs when average people win by putting above average e
             <!--<div class="space"></div>
 
             <div class="categories">
-                
+
                 <ul class="cat">
                     <li class="pull-left"><h4>Filter by Type:</h4></li>
                     <li class="pull-right">
@@ -819,9 +830,9 @@ Healthiest competition occurs when average people win by putting above average e
         </div>
     </div>
 
-    <style> 
+    <style>
     #testimonia{
-            
+
             -webkit-animation-name: example; /* Chrome, Safari, Opera */
             -webkit-animation-duration: 25s; /* Chrome, Safari, Opera */
             -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
@@ -881,7 +892,7 @@ Healthiest competition occurs when average people win by putting above average e
                             <%=f.label 'Message'%>
                             <%= f.text_area :message, :class=>"form-control"%>
                         </div>
-                        
+
                         <%= f.submit "Submit", :class=>"btn tf-btn btn-default"%>
 <%end%>
                 </div>
@@ -916,6 +927,16 @@ Healthiest competition occurs when average people win by putting above average e
     <script type="text/javascript" src="js/jquery.isotope.js"></script>
 
     <script src="js/owl.carousel.js"></script>
+    <script>
+     $(document).ready(function(){
+       setTimeout(function(){
+         $('#notice_wrapper').fadeOut("slow", function() {
+           $(this).remove();
+         })
+       }, 4500);
+     });
+    </script>
+
 
     <!-- Javascripts
     ================================================== -->

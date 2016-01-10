@@ -23,9 +23,11 @@ class WelcomeController < ApplicationController
   def contact
     @contact = Contact.create(contact_params)
     @contact.save
-    redirect_to root_url, notice => 'Ticket generated'
+    redirect_to root_url, :notice => "Thankyou for contacting us. We will get back to you shortly"
   end
-private 
+
+
+private
 def contact_params
 params.require(:contact).permit(:name,:email,:message)
 end

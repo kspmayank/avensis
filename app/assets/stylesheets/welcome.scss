@@ -1,3 +1,21 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#notice_wrapper{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9999999999;
+  background-color: rgba(33,33,33,0.98);
+  .alert,.notice {
+    padding: 2.5rem 0;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+  }
+}

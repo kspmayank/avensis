@@ -6,7 +6,9 @@ Rails.application.routes.draw do
    get 'sign_up' => 'users#new', :as => 'sign_up'
    resources :users
    resources :sessions
- 
+
+   get "welcome/modal_disp" => 'welcomet#modal_disp', :as => :modal_disp
+
 
   get 'event/show'
 
@@ -82,18 +84,18 @@ Rails.application.routes.draw do
 
   get '/onlinecoding' => 'event#Online_Coding'
 
-  
 
 
 
 
-  
 
-  
+
+
+
 
   get '/designing' => 'event#Google_Doodle'
 
-  
+
 
   get '/uc' => 'event#UltimateChallenge'
 
@@ -113,7 +115,7 @@ Rails.application.routes.draw do
 
   get '/movielicious' => 'event#Movielicious'
 
-  
+
 
 
   get '/robowar' => 'event#Robowar'
@@ -128,7 +130,7 @@ Rails.application.routes.draw do
 
   get '/junkyard' => 'event#Junkyard'
 
- 
+
 
   get '/generalquiz' => 'event#GeneralQuiz'
 

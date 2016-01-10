@@ -30,9 +30,12 @@ gem 'bcrypt-ruby', '~> 3.1', '>= 3.1.5'
 # Use Unicorn as the app server
 # gem 'unicorn'
 gem 'tinymce-rails'
+gem 'sweetalert-rails'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'bootstrap-sass'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
